@@ -1,0 +1,188 @@
+Site icones: https://ionic.io/ionicons
+Gerador de textos: https://www.lipsum.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,900;1,800;1,900&display=swap');
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+color picker
+
+Textos menu:
+
+Ínicio
+Empresa
+Serviços
+Diferenciais
+Blog
+Contatos
+
+Sua Marca em Destaque no Google e Facebook
+
+Geramos resultados incríveis com baixo investimento
+Desperte seu sucesso! Aproveite agora a oportunidade imperdível de alcançar seus objetivos com nossos serviços exclusivos. Descubra como podemos impulsionar o seu negócio para o topo. Seja o próximo a experimentar o poder do nosso marketing. Vamos juntos trilhar o caminho para o sucesso!
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,900;1,800;1,900&display=swap');
+
+/*-----------------------------------*\
+#COFIGURAÇÕES
+\*-----------------------------------*/
+
+:root {
+
+/** ----- CORES -----*/
+--cor-1: hsl(236, 57%, 25%);
+--cor-2: hsl(286, 86%, 34%);
+--cor-3: hsl(231, 68%, 21%);
+--cor-4: hsl(39, 100%, 52%);
+--cor-5: hsl(230, 41%, 25%);
+--cor-6: hsl(230, 59%, 16%);
+--cor-7: hsla(335, 87%, 53%, 0.5);
+--cor-8: hsl(236, 26%, 46%);
+--cor-9: hsl(275, 54%, 33%);
+--cor-10: hsl(286, 65%, 52%);
+--cor-11: hsl(286, 87%, 51%);
+--cor-12: hsl(0, 0%, 90%);
+--cor-13: hsla(0, 0%, 0%, 0.7);
+--cor-14: hsl(29, 99%, 67%);
+--cor-15: hsl(0, 0%, 100%);
+--cor-16: hsl(0, 0%, 95%);
+--cor-17: hsl(0, 0%, 80%);
+--cor-18: hsl(0, 0%, 70%);
+
+
+--gradiente-1: linear-gradient(90deg, var(--cor-3) 0, var(--cor-9) 51%, var(--cor-3));
+--gradiente-2: linear-gradient(90deg, var(--cor-11), var(--cor-14));
+
+
+
+/* ----- TIPOGRAFIA - FONTES DO SITE -----*/
+
+  --ff-source-sans-pro: 'Source Sans Pro', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
+
+  --fs-1: 4.2rem;
+  --fs-2: 3.8rem;
+  --fs-3: 3.2rem;
+  --fs-4: 2.5rem;
+  --fs-5: 2.4rem;
+  --fs-6: 2rem;
+  --fs-7: 1.8rem;
+  --fs-8: 1.5rem;
+  --fs-10: 10px;
+  --fs-11: 32px;
+  --fs-12: 2.8rem;
+
+  --fw-500: 500; 
+  --fw-600: 600; 
+  --fw-700: 700; 
+
+  /* ----- BORDAS DO SITE -----*/
+ 
+  --radius-4: 4px;
+  --radius-12: 12px;
+
+  /* ----- ESPAÇAMENTOS DO SITE -----*/
+
+  --section-padding: 60px;
+
+
+  /* ----- TRANSIÇÕES DO SITE -----*/
+  --transition-1: 0.15s ease;  
+  --transition-2: 0.35s ease;  
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28); 
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.56, 1.02); 
+  
+  /* ----- SOMBRAS DO SITE -----*/
+
+  --shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);  
+  --shadow-2: 0 2px 30px hsla(0, 0%, 0%, 0.1);
+
+  
+}
+
+
+/*-----------------------------------*\
+#RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a,
+input,
+img,
+span,
+button,
+ion-icon { display: block;}
+
+button,
+input{
+    background: none;
+    font:inherit;
+    border:none;
+}
+
+button{
+    cursor: pointer;
+}
+
+input{
+    width: 100%;
+}
+
+img{
+    height: auto;
+}
+
+ion-icon{
+    pointer-events: none;
+}
+
+address{
+   font-style: normal;  
+}
+
+html{
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-10);
+    scroll-behavior: smooth; 
+}
+
+
+body{
+    background-color: var(--cor-15);
+    color: var(--cor-8);
+    font-size: var(--fs-7);
+} 
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--cor-16);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor-17);
+} 
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--cor-18);
+} 
