@@ -119,8 +119,8 @@
                       <div class="col-sm-12 col-md-7">
                           <select class="form-control"  name="nivel" >
                            
-                            <option value="msflix">Administrador</option>
-                            <option value="msflix">Cliente</option>
+                            <option value="adm">Administrador</option>
+                            <option value="cliente">Cliente</option>
                                                    
                       </select>
                       </div>
