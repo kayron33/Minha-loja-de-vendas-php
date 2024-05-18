@@ -1,5 +1,8 @@
 <div class="main-content" >
 <?php 
+
+
+require_once('ms-filtros/verifica.php');
 $criarUsuario = filter_input_array(INPUT_POST,FILTER_SANITIZE_FULL_SPECIAL_CHARS); 
 
 

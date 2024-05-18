@@ -21,7 +21,7 @@ class Acessar{
         }
 
 
-        $verifica 
+        $this->VerificaUsuario();
   
   
   
@@ -31,7 +31,23 @@ class Acessar{
         return $this->Resultado;
     }
 
+
+
+    private function VerificaUsuario()
+    {
+        $ler = new Ler();
+        $ler-> Leitura(self::BD, "WHERE email = :em", "em={$this->Email}");
+        if($ler->getResultado()){
+            if(password_verify($this->Senha,$ler->getResultado() [0]['senha'])){
+                $this->Resultado = $ler->getResultado() [0];
+                return true;
+
+            }
+        }
+
+    }
 }
+
 
 
 

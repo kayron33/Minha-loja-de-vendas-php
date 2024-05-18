@@ -49,7 +49,7 @@ require_once("sheep_checa.php");
                 Configurações
               </a>
               <div class="dropdown-divider"></div>
-              <a href="sair.php?sair=true" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+              <a href="index.php?sheep_saiu=true" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
                 Sair
               </a>
             </div>
