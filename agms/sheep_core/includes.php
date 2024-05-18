@@ -22,7 +22,7 @@ define('SHEEP_IMG_PAINEL', './sheep_temas/sheep-imagens/');
 define('SHEEP_AUDIO', '../../../sheep_temas/sheep-midias/');
 
 //AQUI IREI ADICIONAR VERSÃO E MODELO######################
-define('SHEEP_VERSAO','Versão: [ 1.1.0 ] - <b>Atualizado dia: 13/05/2023</b>');
+define('SHEEP_VERSAO','Versão: [ 1.1.0 ] - <b>Atualizado dia: 13/05/2023 Para king</b>');
 
 //AQUI TEXTO DA VERSÃO VERSÃO E MODELO######################
 define('sheep','<center><h2>Atenção!</h2></center><br>'
@@ -93,7 +93,7 @@ spl_autoload_register("sheep_classes");
 
 
 // verifica se e http ou https por Maykon Silveira ####################
-if( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ) {
+if( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'n' ) {
     //if( isset(filter_input(INPUT_SERVER, 'HTTPS', FILTER_SANITIZE_STRIPPED)) && filter_input(INPUT_SERVER, 'HTTPS', FILTER_SANITIZE_STRIPPED) == 'on' ) {
          $https = 'https://';
     }else{
@@ -111,16 +111,16 @@ if( isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ) {
 define('FILTROS','sheep.php?m=');
 
 //ICONE DO SITE SHEEP PHP - CURSOS ONLINE MAYKONSILVEIRA.COM.BR
-define('SHEEP_ICONE', 'assets/img/logo/icone.png');
+define('SHEEP_ICONE', 'assets/img/logo/fivicon king.png');
 
 // LOGO DO PAINEL SHEEP PHP - CURSOS ONLINE MAYKONSILVEIRA.COM.BR
-define('SHEEP_LOGO', 'assets/img/logo/LOGO-SHEEP-PHP-MAYKON-SILVEIRA2.png');
+define('SHEEP_LOGO', 'assets/img/logo/logok.png');
 
 // TITULO PAINEL SHEEP PHP - CURSOS ONLINE MAYKONSILVEIRA.COM.BR
-define('SHEEP_TITULO_PAINEL', 'Painel de Controle Sheep PHP - MaykonSilveira.com.br');
+define('SHEEP_TITULO_PAINEL', 'Painel de Controle King Sites');
 
 // RODAPE TEXTO PAINEL SHEEP PHP - CURSOS ONLINE MAYKONSILVEIRA.COM.BR
-define('SHEEP_RODAPE_PAINEL', '<a href="https://maykonsilveira.com.br/" title="EAD MaykonSilveira.com.br">Todos os Direitos Reservados a EAD MaykonSilveira.com.br SHEEP PHP</a>');
+define('SHEEP_RODAPE_PAINEL', '<a href="#" title="king sites">Todos os Direitos Reservados a king sites</a>');
 
 
 /**
