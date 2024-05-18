@@ -151,7 +151,7 @@ require_once('sheep_top_login.php');
                 ?>
                 
               <div class="card-body">
-                <form method="post" action="ms-filtros/entrar.php" class="needs-validation" novalidate="">
+                <form method="post" action="ms-filtros/logar.php" class="needs-validation" novalidate="">
                   <div class="form-group">
                       <label for="email">Usuário</label>
                     <input id="email" type="email" class="form-control" name="email" tabindex="1" required autofocus>
