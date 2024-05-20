@@ -74,9 +74,11 @@
                       <table class="table table-striped table-hover" id="save-stage" style="width:100%;">
                         <thead>
                           <tr>
-                            <th>Nº</th>
+                            <th>ID</th>
                             <th>Criado</th>
                             <th>Nome</th>
+                            <th>email</th>
+                            <th>phone</th>
                             <th>Função</th>
                             <th>Editar</th>
                             <th>Excluir</th>
@@ -84,22 +86,37 @@
                           </tr>
                         </thead>
                         <tbody>
-                            
-                           
+
+                        <?php 
+                        
+                        $leituraDeUsuarios = new Ler(); 
+                        $leituraDeUsuarios->Leitura('usuarios', "WHERE nivel = 'adm' ORDER BY data DESC ");
+                        if($leituraDeUsuarios->getResultado()){
+                          foreach($leituraDeUsuarios->getResultado() as $usuario){
+                            $usuario= (object) $usuario;
+
+                            $escondeIdUsuario= base64_encode($usuario->id)
+
+                            ?>
                           <tr>
-                            <td>777</td>
-                            <td>77/77/7777</td>
-                            <td>Maykon Silveira</td>
-                            <td><a href="">Cliente</a></td>
-                            <td><a href="" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a></td>
+                            <td><?=  $usuario->id ?></td>
+                            <td><?= date('d/m/Y ',strtotime($usuario->data))   ?></td>
+                            <td><?=  $usuario->nome   ?>  <?=$usuario->sobrenome ?></td>
+                            <td><?=  $usuario->email  ?> </td>
+                            <td><?=  $usuario->whatsapp   ?></td>
+                            <td><a href=""><?=  $usuario->nivel == 'adm' ? 'Administrador' : 'Cliente' ?></a></td>
+                            <td><a href="<?= URL_CAMINHO_PAINEL . FILTROS . 'usuarios/index&editar=' .  $escondeIdUsuario ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a></td>
                             <td>
                                 <form action="" method="post">
-                                 <input type="hidden" name="idDelete" value="">
+                                 <input type="hidden" name="idDelete" value="<?=  $usuario->id ?>">
                                  <button type="submit" class="btn btn-icon btn-danger"><i class="fas fa-trash-alt"></i></button>
                                  </form>
                             </td>
                           </tr>
+                          <?php  }} 
                           
+                          $leituraDeUsuarios = null
+                          ?>  
 
                          
                        

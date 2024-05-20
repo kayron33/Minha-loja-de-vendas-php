@@ -1,5 +1,6 @@
 <?php
 require_once("sheep_checa.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -38,10 +39,10 @@ require_once("sheep_checa.php");
         </div>
         <ul class="navbar-nav navbar-right">     
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> 
-            <img alt="image" src="assets/img/logo/maykon.png" class="user-img-radious-style">
+            <img alt="image" src="assets/img/logo/usuario img.png" class="user-img-radious-style">
              <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right pullDown">
-              <div class="dropdown-title"> Maykon Silveira</div>
+              <div class="dropdown-title"> kayron Silva Monteiro</div>
               <a href="#" class="dropdown-item has-icon"> <i class="far fa-user"></i> Perfil
               </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
                 Atividades
