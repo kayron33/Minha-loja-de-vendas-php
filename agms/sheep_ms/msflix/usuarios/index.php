@@ -90,7 +90,8 @@
                         <?php 
                         
                         $leituraDeUsuarios = new Ler(); 
-                        $leituraDeUsuarios->Leitura('usuarios', "WHERE nivel = 'adm' ORDER BY data DESC ");
+                        $leituraDeUsuarios->Leitura('usuarios', "WHERE nivel = 'adm'  ORDER BY data DESC ");
+                       
                         if($leituraDeUsuarios->getResultado()){
                           foreach($leituraDeUsuarios->getResultado() as $usuario){
                             $usuario= (object) $usuario;
@@ -105,7 +106,7 @@
                             <td><?=  $usuario->email  ?> </td>
                             <td><?=  $usuario->whatsapp   ?></td>
                             <td><a href=""><?=  $usuario->nivel == 'adm' ? 'Administrador' : 'Cliente' ?></a></td>
-                            <td><a href="<?= URL_CAMINHO_PAINEL . FILTROS . 'usuarios/index&editar=' .  $escondeIdUsuario ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a></td>
+                            <td><a href="<?= URL_CAMINHO_PAINEL . FILTROS . 'usuarios/atualizar&editar=' .  $escondeIdUsuario ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a></td>
                             <td>
                                 <form action="" method="post">
                                  <input type="hidden" name="idDelete" value="<?=  $usuario->id ?>">
