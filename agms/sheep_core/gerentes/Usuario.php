@@ -41,6 +41,18 @@ class Usuario{
 
     }
 
+
+    public function DeletarUsuario($id)
+    {
+        $this->Id = $id;
+        if($this->Id == null){
+            
+            $this->Resultado = false;
+            return false;
+        }
+        $this->RemoverUsuario();
+    }
+
 public function getResultado()
 {
     return $this -> Resultado;
@@ -103,6 +115,15 @@ private function VamosAtualizarUsuario(){
     }
 }
 
+
+private function RemoverUsuario(){
+    $DeletarUsuario= new Excluir();
+    $DeletarUsuario->Remover(self::BD, "WHERE id = :id", "id={$this->Id}" );
+    if($DeletarUsuario->getResultado()){
+        $this->Resultado =true;
+        return true;
+    }
+}
 
 }
 

@@ -108,7 +108,8 @@
                             <td><a href=""><?=  $usuario->nivel == 'adm' ? 'Administrador' : 'Cliente' ?></a></td>
                             <td><a href="<?= URL_CAMINHO_PAINEL . FILTROS . 'usuarios/atualizar&editar=' .  $escondeIdUsuario ?>" class="btn btn-icon btn-primary"><i class="far fa-edit"></i></a></td>
                             <td>
-                                <form action="" method="post">
+
+                                <form action="<?= URL_CAMINHO_PAINEL . FILTROS?>usuarios/filtros/excluir" method="post">
                                  <input type="hidden" name="idDelete" value="<?=  $usuario->id ?>">
                                  <button type="submit" class="btn btn-icon btn-danger"><i class="fas fa-trash-alt"></i></button>
                                  </form>
